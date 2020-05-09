@@ -10,8 +10,8 @@ chrome.webRequest.onBeforeRequest.addListener(
     };
   }, {
     urls: [
-      '*://www.amazon.com/',
-      '*://amazon.com/'
+      '*://www.amazon.com/*',
+      '*://amazon.com/*'
     ],
     types: ["main_frame", "sub_frame", "stylesheet", "script", "image", "object", "xmlhttprequest", "other"]
   }, [
