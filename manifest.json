@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "AmazonSmile",
+  "description": "This extension redirects Amazon requests to Amazon Smile, to avoid missing out on donations.",
+  "version": "1.0",
+  "permissions": [
+    "webRequest",
+    "*://www.amazon.com/",
+    "*://amazon.com/",
+    "webRequestBlocking"
+  ],
+  "background":{
+    "scripts": ["background.js"]
+  }
+}
